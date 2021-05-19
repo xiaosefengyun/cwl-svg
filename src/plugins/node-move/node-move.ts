@@ -129,7 +129,7 @@ export class SVGNodeMovePlugin extends PluginBase {
         };
 
         /** We might have hit the boundary and need to start panning */
-        this.edgePanner.triggerCollisionDetection(ev.clientX, ev.clientY, (sdx, sdy) => {
+        this.edgePanner.triggerCollisionDetection(ev.pageX, ev.pageY, (sdx, sdy) => {
             this.sdx += sdx;
             this.sdy += sdy;
 
